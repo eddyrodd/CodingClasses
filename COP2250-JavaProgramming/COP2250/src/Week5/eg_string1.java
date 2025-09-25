@@ -8,5 +8,6 @@ public class eg_string1 {
         System.out.println("The index of second o is: " + a.indexOf('o',3));
         System.out.println("The character length of my 'a' string is: " + a.length());
 
+
     }
 }
