@@ -1,62 +1,45 @@
 package Week5;
 
 public class simpleCar {
+    private int milesForward;
+    private int milesReverse;
 
-    private int milesDriveForward;
-    private int milesDriveReverse;
-    private String honkingHorn;
-    private String carStatus;
-
-    simpleCar() {
-        this.milesDriveForward = 0;
-        this.milesDriveReverse = 0;
-        this.honkingHorn = "The car honked the horn";
-        this.carStatus = " The car is up and running";
+    public simpleCar() {
+        this.milesForward = 0;
+        this.milesReverse = 0;
     }
 
-    simpleCar(int milesDriveForward, int milesDriveReverse, String honkingHorn, String carStatus) {
-        this.milesDriveForward = milesDriveForward;
-        this.milesDriveReverse = milesDriveReverse;
-        this.honkingHorn = honkingHorn;
-        this.carStatus = carStatus;
+    public simpleCar(int milesForward, int milesReverse) {
+        this.milesForward = milesForward;
+        this.milesReverse = milesReverse;
     }
 
-    public int getMilesDriveForward() {
-        return milesDriveForward;
+    public int getMilesForward() {
+        return milesForward;
     }
 
-    public int getMilesDriveReverse() {
-        return milesDriveReverse;
+    public void setMilesForward(int milesForward) {
+        this.milesForward = milesForward;
     }
 
-    public String getHonkingHorn() {
-        return honkingHorn;
+    public int getMilesReverse() {
+        return milesReverse;
     }
 
-    public String getCarStatus() {
-        return carStatus;
+    public void setMilesReverse(int milesReverse) {
+        this.milesReverse = milesReverse;
     }
 
-    public void setMilesDriveForward(int milesDriveForward) {
-        this.milesDriveForward = milesDriveForward;
+    public String honkHorn() {
+        return "Beep beep!";
     }
 
-    public void setMilesDriveReverse(int milesDriveReverse) {
-        this.milesDriveReverse = milesDriveReverse;
-    }
-
-    public void setHonkingHorn(String honkingHorn) {
-        this.honkingHorn = honkingHorn;
-    }
-
-    public void setCarStatus(String carStatus) {
-        this.carStatus = carStatus;
+    public String getStatus() {
+        return "Car drove " + milesForward + " miles forward and " + milesReverse + " miles in reverse.";
     }
 
     @Override
     public String toString() {
-        return "My car has driven " + milesDriveForward + " miles forward " + "and " + milesDriveReverse + " miles in reverse " + honkingHorn + carStatus;
-
-
+        return getStatus() + " " + honkHorn();
     }
 }

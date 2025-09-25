@@ -1,27 +1,19 @@
 package Week5;
-import java.sql.SQLOutput;
+
 import java.util.Scanner;
 
 public class testSimpleCar {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int milDrvFrwrd;
-        int milDrvBckwrd;
-        String hornHonk;
-        String carStat;
+        System.out.print("Enter miles to drive forward: ");
+        int forward = input.nextInt();
 
-        hornHonk = ", I honked the horn";
-        carStat = " and the car is up and running";
+        System.out.print("Enter miles to drive in reverse: ");
+        int reverse = input.nextInt();
 
-        System.out.println("Enter miles driven forward: ");
-        milDrvFrwrd = input.nextInt();
-        System.out.println("Enter miles driven backward: ");
-        milDrvBckwrd = input.nextInt();
+        simpleCar car = new simpleCar(forward, reverse);
 
-
-        simpleCar car1 = new simpleCar(milDrvFrwrd, milDrvBckwrd, hornHonk, carStat);
-        System.out.println(car1);
-
+        System.out.println(car); // uses toString()
     }
 }
