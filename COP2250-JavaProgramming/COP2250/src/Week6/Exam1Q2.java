@@ -1,4 +1,3 @@
-package Week6;
 import java.util.*;
 import java.lang.Math;
 
@@ -21,3 +20,16 @@ public class Exam1Q2 {
 Question:
 Write an example of using the Math.sqrt method, the Math.pow method, and Math.PI.
 */
+
+public static void main(String[] args){
+    double sqrtExample, powExample, PIExample;
+
+    sqrtExample = Math.sqrt(5.0);
+    System.out.println("Sqrt of 5: " + sqrtExample);
+
+    powExample = Math.pow(4, 3);
+    System.out.println("4 to pwr of 3: " + powExample);
+
+    PIExample = Math.PI;
+    System.out.println("Math.PI: " + PIExample);
+}

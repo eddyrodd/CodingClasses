@@ -1,8 +1,4 @@
-package Week6;
-import java.util.*;
-import java.lang.Math;
-
-/*
+package Week6;/*
 Exam1Q8
 
 public class Exam1Q8 {
@@ -43,3 +39,12 @@ Write a Shoes domain class that will contain the brand of the shoe, the year rel
 Then, in the driver class, you will create a shoe as the user. Finally, manipulate the domain class
 in order to print all the details pertaining to the shoe created by the user.
 */
+
+public class Shoes{
+    private String brand, year, color;
+
+    public Shoes(String brand,String year,String color) {
+        this.brand
+    }
+
+}

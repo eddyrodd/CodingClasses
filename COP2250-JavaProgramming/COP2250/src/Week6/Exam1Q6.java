@@ -1,4 +1,4 @@
-package Week6;
+
 import java.util.*;
 import java.lang.Math;
 
@@ -26,3 +26,19 @@ Declare a String variable named miamiFlorida with the initial value of "South Be
 - Print the location of the second occurrence of the letter 'e' in miamiFlorida.
 - Print the initials of the two words together.
 */
+
+
+public static void main(String[] args) {
+    String miamiFlorida = "South Beaches";
+    int length = miamiFlorida.length();
+    System.out.println(miamiFlorida.charAt(length - 2));
+
+    int firstE = miamiFlorida.indexOf('e');
+    int secondE = miamiFlorida.indexOf('e', firstE + 1);
+    System.out.println(secondE);
+
+    char firstInit = miamiFlorida.charAt(0);
+    int space = miamiFlorida.indexOf(" ");
+    char secondInit = miamiFlorida.charAt(space + 1);
+    System.out.println(firstInit + "" + secondInit);
+}

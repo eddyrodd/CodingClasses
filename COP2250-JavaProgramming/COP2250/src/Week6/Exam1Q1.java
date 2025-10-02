@@ -25,9 +25,17 @@ What would be input using each of these 2 methods if the input is: "Hello Bye-by
 public class Exam1Q1 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Type in: Hello Bye-bye");
-        String nextExample = input.next();
-        String nextLineExample = input.nextLine();
+        System.out.println("Type Hello Bye-bye:");
+        String nextExample = input.next();          // reads "Hello"
+        String restOfLine = input.nextLine();       // reads " Bye-bye"
+        String nextLineExample = nextExample + restOfLine; // combine them
+
+        // Echo input back
+        System.out.println(nextLineExample);
+
+        System.out.println("Using next: " + nextExample);
+        System.out.println("Using nextLine: " + nextLineExample);
+
     }
 }
 
