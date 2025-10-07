@@ -1,4 +1,4 @@
-
+/*
 import java.util.*;
 import java.lang.Math;
 
@@ -18,7 +18,8 @@ public class Exam1Q6 {
         System.out.println("Initials: " + initials);
     }
 }
-
+*/
+/*
 -----------------------------------
 Question:
 Declare a String variable named miamiFlorida with the initial value of "South Beaches".
@@ -27,7 +28,7 @@ Declare a String variable named miamiFlorida with the initial value of "South Be
 - Print the initials of the two words together.
 */
 
-
+/*
 public static void main(String[] args) {
     String miamiFlorida = "South Beaches";
     int length = miamiFlorida.length();
@@ -42,3 +43,4 @@ public static void main(String[] args) {
     char secondInit = miamiFlorida.charAt(space + 1);
     System.out.println(firstInit + "" + secondInit);
 }
+*/

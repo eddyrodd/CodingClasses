@@ -20,7 +20,7 @@ public class Exam1Q2 {
 Question:
 Write an example of using the Math.sqrt method, the Math.pow method, and Math.PI.
 */
-
+/*
 public static void main(String[] args){
     double sqrtExample, powExample, PIExample;
 
@@ -33,3 +33,4 @@ public static void main(String[] args){
     PIExample = Math.PI;
     System.out.println("Math.PI: " + PIExample);
 }
+*/
