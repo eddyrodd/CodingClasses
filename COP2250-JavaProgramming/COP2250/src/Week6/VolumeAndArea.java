@@ -21,11 +21,6 @@ public class VolumeAndArea {
         System.out.printf("\n Area is: %.2f", area);
 
 
-
-
-
-
-
     }
 
 
