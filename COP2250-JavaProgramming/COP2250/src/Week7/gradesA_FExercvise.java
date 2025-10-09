@@ -19,6 +19,10 @@ public class gradesA_FExercvise {
         {
             System.out.println("C");
         }
+        else if (n < 70 && n >= 60)
+        {
+            System.out.println("D");
+        }
         else
         {
             System.out.println("Fail");
